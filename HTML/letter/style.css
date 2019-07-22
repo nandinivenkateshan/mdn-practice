@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    font-size: 14px;
+}
+main{
+    border:1px solid black;
+    margin:10px 300px 300px 300px;
+    padding:10px 40px 10px 40px;
+}
+aside .right{
+float:right;
+line-height: 5px;
+text-align: right;
+}
+aside .date{
+    line-height: 30px;
+}
+.left{
+    clear: both;
+}
+.sub-head{
+    font-weight: bold;
+}
+.left{
+    line-height: 5px;
+}
+a{
+    color: blue;
+}
+section p, ul li, dl{
+    line-height: 20px;
+}
+.publish-name{
+    font-style: italic;
+}
