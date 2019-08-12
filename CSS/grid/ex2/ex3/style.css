@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+    max-width:600px;
+    margin:50px auto;
+}
+header,footer{
+background-color: aqua;
+border:1px solid black;
+}
+.container{
+    display: grid;
+    grid-template-areas: "header header"
+                         "aside article"
+                         "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    justify-content: end;
+}
+header{
+    grid-area: header;
+    text-align: center;
+}
+aside{
+    grid-area: aside;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}

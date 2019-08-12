@@ -1,0 +1,27 @@
+.container {
+  padding: 10px;
+  border: 1px solid red;
+  height: 900px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+  /* justify-items: end; */
+  /* justify-content:start;  */
+  /* align-items: start; */
+  /* align-content: space-between; */
+}
+.container div {
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 50px;
+}
+.item1 {
+  grid-area: 1/1/2/3;
+}
+.item6 {
+  grid-area: 3/1/4/4;
+  justify-self: stretch;
+}
+.item3 {
+  align-self: center;
+}
