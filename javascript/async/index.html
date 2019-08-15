@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+    <script>
+     /* async function myfetch() {
+        let promise = await fetch("tea.jpg");
+        let promise1 = await promise.blob();
+        let imageURL = URL.createObjectURL(promise1);
+        let img = document.createElement("img");
+        img.src = imageURL;
+        document.body.appendChild(img);
+      }
+      myfetch();*/
+     
+     /* async function myfetch() {
+        let promise = await fetch("tea.jpg");
+        return await promise.blob();
+      }
+      myfetch().then(promise1 => {
+        let imageURL = URL.createObjectURL(promise1);
+        let img = document.createElement("img");
+        img.src = imageURL;
+        document.body.appendChild(img);
+      })*/
+
+         async function myfetch() {
+        let promise = await fetch("tea.jpg");
+        return await promise.blob();
+      }
+      myfetch().then(promise1 => {
+        let imageURL = URL.createObjectURL(promise1);
+        let img = document.createElement("img");
+        img.src = imageURL;
+        document.body.appendChild(img);
+      })
+      .catch(response => console.log('There has been a problem with your fetch operation: ' + response.message))
+     
+    </script>
+  </body>
+</html>
